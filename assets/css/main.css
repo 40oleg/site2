@@ -401,8 +401,42 @@
   align-items: center;
   margin-top: 60px;
 }
+@media screen and (max-width: 1250px) {
+  .portfolio__work:not(.portfolio__work_active) {
+    display: none;
+  }
+}
 .portfolio__image {
   position: relative;
+}
+@media screen and (max-width: 1250px) {
+  .portfolio__image img {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .portfolio__left-arrow {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../img/slider-arrow.png);
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .portfolio__right-arrow {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    right: -22px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    background: url(../img/slider-arrow.png);
+    background-size: cover;
+    border-radius: 10px;
+  }
 }
 .portfolio__address {
   margin-top: 30px;
