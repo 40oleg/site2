@@ -457,6 +457,11 @@
   flex-flow: column;
   justify-content: space-between;
 }
+@media screen and (max-width: 1250px) {
+  .advantages__titles {
+    display: none;
+  }
+}
 .advantages__group {
   display: flex;
   flex-flow: row wrap;
@@ -537,7 +542,17 @@
 .swiper-pagination-bullet-active {
   color: #fff;
   background: #000 !important;
-  width: 20px !important;
+  width: 16px !important;
+  border-radius: 9px !important;
+}
+
+.mobile-swiper {
+  display: none;
+}
+@media screen and (max-width: 1250px) {
+  .mobile-swiper {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
