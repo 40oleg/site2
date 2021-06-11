@@ -95,7 +95,7 @@
 .form input[type=radio] {
   display: none;
 }
-.form label {
+.form .radio {
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -104,7 +104,7 @@
   line-height: 18px;
   user-select: none;
 }
-.form label::before {
+.form .radio::before {
   content: "";
   display: inline-block;
   width: 18px;
@@ -115,7 +115,7 @@
   background: #F4F4F4 0 0 no-repeat;
   border-radius: 50%;
 }
-.form label::after {
+.form .radio::after {
   content: "";
   display: inline-block;
   width: 12px;
@@ -125,7 +125,7 @@
   bottom: 4px;
   background: transparent 0 0 no-repeat;
 }
-.form input[type=radio]:checked + label::after {
+.form .radio_active::after {
   background: #F79F33 0 0 no-repeat;
   border-radius: 50%;
 }
@@ -299,8 +299,9 @@
 }
 @media screen and (max-width: 900px) {
   .introduce__s3 {
-    font-size: 22px;
+    font-size: 18px;
     margin-right: 15px;
+    margin-top: 0;
   }
 }
 .introduce__s4 {
@@ -336,11 +337,6 @@
 @media screen and (max-width: 1366px) {
   .introduce__formtext {
     margin-top: 15px !important;
-  }
-}
-@media screen and (max-width: 900px) {
-  .introduce__formtext {
-    font-size: 11px;
   }
 }
 .introduce__person {
