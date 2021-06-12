@@ -602,6 +602,9 @@
   }
 }
 .advantages__icon {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   width: 120px;
   height: 120px;
   background: #F79F33;
