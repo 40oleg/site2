@@ -611,12 +611,8 @@
   border-radius: 50%;
   margin: 0 auto;
 }
-.advantages__icon svg {
-  margin: 50% auto 0 auto;
-  transform: translateY(-50%);
-}
 @media screen and (max-width: 1366px) {
-  .advantages__icon svg {
+  .advantages__icon img {
     width: 55px;
   }
 }
