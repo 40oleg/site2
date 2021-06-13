@@ -759,6 +759,7 @@
 }
 .advantages__btn {
   margin: 60px auto 0 auto;
+  text-align: center;
 }
 @media screen and (max-width: 1366px) {
   .advantages {
